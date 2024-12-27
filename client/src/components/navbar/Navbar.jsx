@@ -32,10 +32,10 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-            <a href="/">Sign In</a>
-            <a href="/" className="register">
+            <Link to="/login">Sign In</Link>
+            <Link to="/register" className="register">
               Sign Up
-            </a>
+            </Link>
           </>
         )}
         <div className="menuIcon">
@@ -46,8 +46,8 @@ const Navbar = () => {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
           <a href="/agents">Agents</a>
-          <a href="/">Sign In</a>
-          <a href="/">Sign Up</a>
+          <Link to="/login">Sign In</Link>
+          <Link to="/register">Sign Up</Link>
         </div>
       </div>
     </nav>
